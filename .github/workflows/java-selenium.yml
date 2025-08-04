@@ -32,9 +32,9 @@ jobs:
         run: mvn clean test
 
       - name: Archive test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: target/surefire-reports/
+        if: failure()
+        run: |
+          echo "===== TEST FAILURE REPORTS ====="
+          cat target/surefire-reports/*.txt || echo "No failure reports found"
+
 
