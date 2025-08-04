@@ -4,7 +4,7 @@
 
 <!--<parameter name="baseURL" value="https://tutorialsninja.com/demo/"/> -->
 <parameter name="browser" value="chrome"/>
-<parameter name="os" value="windows"/>
+<parameter name="os" value="linux"/>
 
 
 <listeners>
